@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+            "name": "sorry",
+            "script": "server/index.js",
+            "cwd": "/space/node-sorry",
+            "ignore_watch": [
+                "node_modules",
+                "logs",
+                "public"
+            ],
+            "env": {
+            }
+        }
+    ]
+}
