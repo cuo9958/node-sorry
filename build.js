@@ -7,17 +7,17 @@ const {templates} = config
 
 // 渲染首页,404,contribute
 ejs.renderFile('./view/index.ejs', config, {}, function(err, str){
-  createFolder('./dist/sorry/index.html')
-  fs.writeFileSync('./dist/sorry/index.html',str)
+  createFolder('./dist/index.html')
+  fs.writeFileSync('./dist/index.html',str)
 });
 ejs.renderFile('./view/404.ejs', config, {}, function(err, str){
-  createFolder('./dist/sorry/404.html')
-  fs.writeFileSync('./dist/sorry/404.html',str)
+  createFolder('./dist/404.html')
+  fs.writeFileSync('./dist/404.html',str)
 });
 
 ejs.renderFile('./view/contribute.ejs', config, {}, function(err, str){
-  createFolder('./dist/sorry/contribute.html')
-  fs.writeFileSync('./dist/sorry/contribute.html',str)
+  createFolder('./dist/contribute.html')
+  fs.writeFileSync('./dist/contribute.html',str)
 });
 
 
@@ -34,14 +34,14 @@ templates.forEach((template, index)=>{
 // 复制其他资源和模板
 travel('./view', pathname => {
   if(pathname.indexOf('.ejs') < 0){
-    const distPath = `./dist/sorry/${pathname.split('view')[1]}`
+    const distPath = `./dist/${pathname.split('view')[1]}`
     createFolder(distPath)
     fs.copyFileSync(pathname, distPath,)
   }
 })
 
 travel('./template', pathname => {
-  const distPath = `./dist/sorry/${pathname}`
+  const distPath = `./dist/${pathname}`
   createFolder(distPath)
   fs.copyFileSync(pathname, distPath,)
 })

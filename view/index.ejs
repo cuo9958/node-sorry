@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Sorry! 在线生成(node版)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/sorry/w3.css" />
+  <link rel="stylesheet" href="/w3.css" />
   <style>
     a{
       text-decoration: none;
@@ -36,9 +36,9 @@
   <div class="w3-container w3-display-container w3-half">
     <div class="w3-display-container">
     <% templates.forEach(template=>{ %>
-      <a href="/sorry/gif/<%= template.name %>.html">
+      <a href="/gif/<%= template.name %>.html">
         <div style="width:47%; margin:1%" class="w3-display-container w3-show-inline-block">
-          <img width="100%" src="/sorry/template/<%= template.name %>/template.png" alt="">
+          <img width="100%" src="/template/<%= template.name %>/template.png" alt="">
           <h4 class="w3-center"><%= template.title %></h4>
         </div>
       </a>
@@ -46,8 +46,8 @@
     </div>
   </div>
 
-  <script src="/sorry/cookies.js"></script>
-  <script src="/sorry/main.js"></script>
+  <script src="/cookies.js"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>
