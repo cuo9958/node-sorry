@@ -87,8 +87,8 @@ const getGif = (ctx) => {
   const { request, response, method } = ctx
   const { body } = request
   const paths = request.path.split('/')
-  const templateName = paths[2]
-  const id = paths[3]
+  const templateName = paths[3]
+  const id = paths[4]
   if (!templateName) {
     ctx.throw({ message: 'templateName required', status: 404 })
   }
