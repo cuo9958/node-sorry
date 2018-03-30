@@ -19,12 +19,5 @@ module.exports = {
     }
   ],
   statScript: `<script>
-                var _hmt = _hmt || [];
-                (function() {
-                  var hm = document.createElement("script");
-                  hm.src = "https://hm.baidu.com/hm.js?81512701524685db982762edff332855";
-                  var s = document.getElementsByTagName("script")[0]; 
-                  s.parentNode.insertBefore(hm, s);
-                })();
               </script>`
 }

@@ -46,7 +46,7 @@ function submit(templateName) {
 
     save_input()
 
-    xhttp.open("POST", `/apis/${templateName}`, true);        
+    xhttp.open("POST", `/sorry/apis/${templateName}`, true);        
 
     xhttp.send(make_body());
 }
